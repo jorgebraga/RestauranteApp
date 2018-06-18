@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Restaurante app</string>
+    <string name="botao"> Calcular Conta Total</string>
+</resources>

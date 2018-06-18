@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="382dp"
+        android:layout_height="518dp"
+        android:background="#ff6600"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Consumo_txt"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:autoText="true"
+                android:clickable="true"
+                android:text="Cosumo Total R$:" />
+
+            <EditText
+                android:id="@+id/edt_consumo"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Couvert_txt"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Couvert artístico R$:" />
+
+            <EditText
+                android:id="@+id/edt_couvert_artistico"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Dividir_txt"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Dividir conta por:" />
+
+            <EditText
+                android:id="@+id/edt_dividir"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/bt_calcular"
+                android:layout_width="375dp"
+                android:layout_height="match_parent"
+                android:background="#ff6655"
+                android:text="@string/botao" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TableRow>
+
+            <TextView
+                android:id="@+id/Taxa_txt"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Taxa de serviço (10%) R$:" />
+
+            <EditText
+                android:id="@+id/edt_servico"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/conta_txt"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Conta Total R$:" />
+
+            <EditText
+                android:id="@+id/edt_conta_total"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/valor_pessoa_txt"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Valor por pessoa R$:" />
+
+            <EditText
+                android:id="@+id/edt_valor_pessoa"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="189dp"
+            app:srcCompat="@drawable/balaiodelenha" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
